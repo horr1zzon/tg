@@ -19,7 +19,7 @@ async def start_handler(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
             text="🎮 Играть в Zombie City",
-            web_app=WebAppInfo(url="https://26a2-178-88-75-244.ngrok-free.app")
+            web_app=WebAppInfo(url="https://tg-orpin.vercel.app/")
         )]
     ])
     await message.answer("Добро пожаловать в Zombie City!", reply_markup=keyboard)
