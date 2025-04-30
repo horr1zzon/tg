@@ -1,0 +1,153 @@
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: orange;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#main-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#main-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid orange;
+  box-shadow: 0 0 10px orange;
+}
+
+#main-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+#stats {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+}
+
+.shop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  border: 2px solid orange;
+  border-radius: 12px;
+  padding: 20px;
+  z-index: 1000;
+  width: 300px;
+}
+
+.shop h2 {
+  margin-top: 0;
+  color: orange;
+}
+
+.shop button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  border: 2px solid #00e676;
+  border-radius: 12px;
+  padding: 20px;
+  z-index: 999;
+  width: 300px;
+  text-align: center;
+}
+
+.modal img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.modal h2 {
+  color: #00e676;
+  margin-top: 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-upload {
+  background-color: #146e97;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+
+.close-btn {
+  background-color: #c62828;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
